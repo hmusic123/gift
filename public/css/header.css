@@ -1,0 +1,88 @@
+p,h1,h2,h3,h4,h5,h6,body,ul,ol,dl,pre{margin:0;}
+a{text-decoration:none;color:black}
+header.container{background:white}
+
+.sanjiao{
+	border:6px solid transparent;
+	border-top-color:black;
+	margin-right:5px;
+	float:right;
+	margin-top:13px;  
+	}
+.dom_a1{display:none;
+	width:100px;
+	border:1px solid black;
+	position:absolute;
+	background:white;
+	padding: 10px;
+	}
+
+	.lv_all{border-bottom: 1px solid gray;margin-top: 10px}
+	nav,.lv_all:after{
+	content:"";
+	display:block;
+	clear:both
+}
+	
+	.lv_hleft_c{
+	float:left;
+	margin-left:100px;
+	}
+ul,li{list-style:none;}
+.lv_hringt_c{margin-right:100px}
+.lv_hringt_c li{
+	float:right;
+	margin-right:10px}
+img{ vertical-align:middle;}
+	
+	.search_all{width:1200px;margin:0 auto}
+	.search_a1{float:left}
+	
+	.search_kuang{
+	border:3px solid red;
+	width:325px;height:38px;
+	margin-top:30px
+}
+.search_kuang .search-img{float:right}
+.search_kuang .input_search{
+	float:left;
+	width:285px;
+	height:100%;
+	border:0;
+	outline:0;
+	box-sizing:border-box;
+	font-size:14px;}
+
+nav{
+border:1px solid #d30b15;
+width:100%;
+height:40px;
+background:#d30b15;
+}
+div.nav_lv{width:1200px;margin:0 auto}
+
+.ly_leftnew,.ly_rightnew{
+float:left;
+color:#fff;
+text-align:center;
+line-height:40px;
+font-size:16px
+}
+div.ly_leftnew{
+width:168px;
+height:40px;
+background:#f42630;
+
+}
+div.ly_rightnew a{
+float:left;
+width:auto;
+height:40px;
+color:#fff;
+margin-left:15px;
+padding:0 15px;
+}
+ div.ly_rightnew a:hover{
+background:#f42630;
+
+ }

@@ -1,0 +1,96 @@
+*{margin:0;padding:0} 
+section.products_ok{background:#f9f9f9}
+div.out{position:relative;width:100%;height:390px;margin: 10px auto}
+ul{list-style: none;}
+.out ul.img li{
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+.out ul.img li img{width:100%;height:390px}
+
+.out .num{
+    position:absolute;
+    bottom:20px;
+    left:0px;
+    font-size:0px;
+    text-align:center;
+    width:100%;
+} 
+.out .num li{
+    width:15px;
+    height:15px;
+    background:rgb(145, 111, 240);
+    color:rgb(46, 40, 40);
+    text-align:center;
+    line-height:20px;
+    display:inline-block;
+    border-radius:50%;
+    font-size:16px;
+    margin:0 3px;
+    cursor:pointer;
+    
+}     
+.out .num li.active{
+    background:rgb(255, 255, 255);
+}
+.out .btn{
+    position:absolute;
+    top:50%;
+    margin-top:-30px;
+    width:30px;
+    height:60px;           
+    color:#fff;
+    text-align:center;            
+    display:none;
+    cursor:pointer;
+}
+.out:hover .btn{
+    display:block;
+}
+.out .left{
+    left:50px;
+    top:120px;
+    background:url(img/products/arrow-left.png) rgba(54, 51, 51, 0.3) no-repeat 8px 20px;
+}
+.out .right{
+    right:50px;
+    top:120px;
+    background:url(img/products/arrow-right.png) rgba(54, 51, 51, 0.3) no-repeat 8px 20px;
+}
+
+ul::after{
+content: " ";
+display:block;
+clear:both}
+div.products_zhuti,ul.bri_gift_top{width:86%;margin:0 auto}
+ul.bri_gift_top{
+border-bottom: 3px solid pink;height:55px}
+li.bir{ 
+background:url(img/products/bir_top_left.jpg) bottom center  no-repeat;
+ float:left;width:106px;height:53px;
+ text-align: center;line-height:53px;color:red;
+ font-size:22px;font-weight:60px}  
+li.bir_right img{
+vertical-align: middle;
+margin:0 5px}
+li.bir_right{
+float:right;width:50%;
+text-align: right;
+line-height:53px}
+div.products_zhuti{
+display:flex;
+justify-content: space-between;
+flex-wrap: wrap}
+div.products_zhuti_detail{width:300px;height:384px;border:1px solid gray;margin-bottom:15px}
+div.products_zhuti_detail img{width:260px;height:260px;margin:5px 18px}
+div.products_zhuti_detail img:hover{
+    box-shadow: 0px 15px 15px rgb(133, 109, 58);
+    
+    transition: all 0.5s linear;
+}
+div.product_bottom_right,div.product_bottom_left{height:290px}
+div.product_bottom_left{width: 220px;margin-right:10px;background:white}
+div.product_bottom_right{width:957px;border:1px solid red}
+div.product_tu{width:100%;margin: 10px 0}

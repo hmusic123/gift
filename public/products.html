@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <link rel="stylesheet" href="css/products.css">
+   
+</head>
+
+
+<body>
+ <header id="header" class="container"> </header> 
+    <section class="products_ok">
+        <!--lunbo-->
+      <div class="out">
+                <ul class="img">
+                    <li > <a href="#"><img src="img/products/lb1.jpg" width="100%"></a></li>
+                    <li><a href="#"><img src="img/products/lb2.jpg" width="100%"></a></li>
+                    <li><a href="#"><img src="img/products/lb3.jpg" width="100%"></a></li>
+                </ul>                   
+            <!--三个小圆圈-->
+                <ul class="num"></ul>
+                <div class="left btn"></div>
+                <div class="right btn"></div>
+        
+        
+        </div>
+      
+           <ul class="bri_gift_top">
+               <li class="bir">
+                   女友生日
+                </li >
+               <li class="bir_right">
+                   <a href="#">
+                       <img src="img/products/btop_left.jpg" alt="">
+                   </a>
+                   <span><font>1</font>/2</span>
+                   <a href="#"><img src="img/products/btop_right_hover.jpg" alt=""></a>
+               </li>
+           </ul>
+         <div class="products_zhuti" id="plist">
+             <!--   <div class="products_zhuti_detail">
+                    <a href="#"><img src="img/index/part6/boyFriend1.jpg" class="girlfrendImg"></a>
+                    <span class="price_color"> ￥288</span>
+                    <h3> <a href="#"> Honey 熊</a></h3>  
+                    <a href="#">Honey 熊</a>
+                </div>-->
+               
+         </div>
+         <div class="products_zhuti">
+            <div class="product_tu"><a href="#"><img src="img/products/ad.jpg" alt=""></a></div>
+            <div class="product_bottom_left">
+                <img src="img/products/tese.png" alt="">
+            </div>
+            <div class="product_bottom_right">
+                <img src="img/products/tese2.jpg" alt="">
+            </div>
+         </div>
+               
+                
+       
+
+    </section>
+    <footer >
+        <iframe src="footer.html" frameborder="0" width="100%" height="560px"></iframe>
+     </footer>
+</body>
+</html>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/products.js"></script>
+
+<script src="js/header.js"></script>
+<script>
+   	$(function(){
+	//代码初始化
+	var size=$(".img li").size();
+	for(var i=1;i<=size;i++){
+		var li="<li></li>";
+		$(".num").append(li);
+	
+	}
+
+
+	//手动控制轮播
+	$(".img li").eq(0).show();
+	$(".num li").eq(0).addClass("active");
+	$(".num li").mouseover(function(){
+		$(this).addClass("active").siblings().removeClass("active")
+		var index=$(this).index();
+		i=index;
+		$(".img li").eq(index).stop().fadeIn().siblings().stop().fadeOut();
+	})
+
+	//自动轮播
+	var i=0;
+	var t=setInterval(move,1500)
+
+	//核心向左运动函数
+	function moveL(){
+		i--;
+		if(i==-1){
+			i=size-1;
+		}
+		$(".num li").eq(i).addClass("active").siblings().removeClass("active");
+		$(".img li").eq(i).fadeIn(300).siblings().fadeOut(500);
+	}
+	//核心向右运动函数
+	function move(){
+		i++;
+		if(i==size){
+			i=0;
+		}
+		$(".num li").eq(i).addClass("active").siblings().removeClass("active");
+		$(".img li").eq(i).fadeIn(300).siblings().fadeOut(500);
+	}
+	$(".out .left").click(function(){
+		moveL()
+	})
+	$(".out .right").click(function(){
+		move()
+	})
+
+
+
+	//定时器的开始于结束
+	$(".out").hover(function(){
+		clearInterval(t)
+	},function(){
+		t=setInterval(move,1500);
+	})
+})
+   
+</script>

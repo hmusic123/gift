@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>网页</title>
+    <meta charset="utf-8">
+    <style>
+      body,p,h1,h2,h3,h4,h5,h6,ul,li{margin: 0;padding: 0}
+    div.login_container{
+      width:1100px;height:513px;
+      border:1px solid #dfc9b2;background:#fdfbf4;
+      margin:0 auto;display:flex;
+      justify-content:space-around;
+      flex-wrap: wrap;
+    }
+    div.left{width:300px;height:393px;padding:100px;padding-left:60px}
+    div.right{width:520px;height:500px;border:1px solid red}
+    img.login_tp{width:152px;height:41px;float:left;margin:20px 40px}
+    ul.login_nav,ul.login_nav>li,ul.input_login{list-style: none;float:left;}
+    ul.login_nav>li{border-bottom: 1px solid gray;width:230px;text-align: center}
+    ul.input_login>li{margin:20px;width:390px}
+    input.radom,input.radom_yz{width:68px;height:28px;margin-right:10px}
+    input.tijiao{width:220px;height:28px;margin-left:10px}
+    .btn{width:115px;height:38px;margin-left:80px;background:hsla(0, 100%, 50%, 0.575)}
+    </style>
+  </head>
+  <body>
+      <div class="login_container">
+          <div class="left"><img src="img/lw_login/login_1.jpg" alt=""></div>
+          <div class="right">
+            <h6>只需一步，快速登录</h6>
+            <hr>
+            <div>
+              <img src="img/register_login/2.jpg" class="login_tp">
+              <img src="img/register_login/3.gif" class="login_tp">
+
+              
+            </div>
+          
+            <ul class="login_nav">
+              <li>手机快捷登录</li>
+              <li>账号登录</li>
+            </ul>
+            
+         
+					
+              <ul class="input_login">
+                <li><span>用户名:</span>
+                  <input type="text" placeholder="请输入您的用户名" class=" tijiao uname" name="uname" >
+                </li>
+                <li> <span>密码：</span>
+          <input type="password" placeholder="请输入您的密码" class=" tijiao upwd" name="upwd"></li>
+          <li><span>密码</span>
+            <input type="password" placeholder="邮箱" class=" tijiao rupwd" name="email"></li></li>
+                <li><span>手机号码</span>
+                  <input type="text" class="radom_yz" name="phone">
+                  <input type="text" class="radom"></li>
+                  <li> <input type="checkbox">自动登录 <a href="#">忘记密码？</a></li>
+                <li><input type="submit" class="btn register" value="确认注册"></li>
+              </ul>
+             
+           
+            
+          </div>
+
+      </div>
+      
+   
+   <script src="js/ajax.js"></script>
+   <script src="js/jquery-1.11.3.js"></script>
+   <script src="js/register.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

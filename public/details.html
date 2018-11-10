@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  
+  <style>
+    *{padding:0;margin:0}
+    ul,li{list-style: none}
+    p_top{width:1200px;margin:0 auto}
+    div.gift_content{
+            display:flex;
+          flex-wrap: wrap;
+          width:1200px;justify-content:center;
+          border:1px solid black;
+          margin:0 auto}
+    div.gift_content_left{width:974px;}
+   div.gift_basic{
+     height:500px;
+     border:1px solid red}
+   div.gift_left,div.gift_right{
+      float:left;height:500px;
+      margin-right:7px}
+   div.gift_left,{width:420px}
+   div.gift_right>div{width:529px;margin-bottom:15px}
+   .sm_imgkuang{
+      width:420px;height:63px;
+      border:1px solid rgb(202, 202, 218);
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around}
+    a.prev,a.next{
+      height:100%;
+      width:12px;
+      border:1px solid gainsboro;
+      background: gainsboro;
+      line-height: 60px}
+    div.sm_imglist{width:360px;border:1px solid red}
+    div.sm_imglist ul li{float:left; margin:0 5px}
+    div.sm_imglist ul li img{width:62px;height:60px;}
+
+   .gift_buy_right,div.gift_buy_top>h4{width:50%}
+   .gift_buy_right{float:right;font-size: 12px;text-align: right;color: gray}
+    div.gift_buy_one{border-top:1px dashed gray;}
+      span.left_font{font-size: 12px;color: dimgrey}
+      span.price{font-size: 24px;font-weight: 400}
+    div.gift_buy_one>span,span.left_font{margin:20px 12px}
+
+    div.gift_buy_three{
+          width: 531px;height:174px;
+          border:3px dashed gray;
+          background:rgba(126, 87, 87, 0.2);
+          margin:40px 0}
+    div.gift_buy_three>div{width:100%;height:50px;line-height: 50px}
+    div.gift_buy_three>div span.color_three{color:red}
+    span.inline_block{display: inline-block;border:1px solid gray;}
+
+
+   div.gift_love_box{width:208px;height:4200px;border:1px solid blue;margin-left: 10px}
+   .gift_love_box1{height:1047px;margin-bottom: 5px;border:1px solid gray}
+   div.gift_qing{height:117px;border:1px solid blue;border:1px solid blue}
+
+
+
+
+
+
+
+
+   div.gift_tabnav{height:38px;width:100%;border:1px solid blue;margin:10px 0;border-bottom: 3px solid red}
+   ul.gift_tabnav1>li{
+     float:left;width:121px;height:38px;
+     border-right:1px solid blue;
+    
+     text-align: center;line-height: 38px}
+   .float_goumai{float:right}
+   div.tupian_xiangqing{text-align: center}
+   div.cb_right{position: fixed;right:20px;bottom: 10px;width:61px}
+  
+  </style>
+</head>
+<body>
+    <header id="header" class="container">
+    </header>
+    <p class="p_top"><a href="index.html">首页</a>&lt;商品详情</p>
+     <div class="gift_content">
+         <div class="gift_content_left">
+            <div class="gift_basic">
+           <!--    <div class="gift_left">
+                  <img src="img/lw_lipinxiangqing/lp_1.jpg" width="418px" height="418px">
+                  <div class="sm_imgkuang">
+                      <a href="#" class="prev">&lt;</a>
+                      <div class="sm_imglist">
+                          <ul >  
+                              <li><img src="img/lw_lipinxiangqing/lp_2.jpg" alt=""></li>
+                              <li><img src="img/lw_lipinxiangqing/lp_5.jpg" alt=""></li>
+                              <li><img src="img/lw_lipinxiangqing/lp_3.jpg" alt=""></li>
+                              <li><img src="img/lw_lipinxiangqing/lp_4.jpg" alt=""></li>
+                             
+                              <li><img src="img/lw_lipinxiangqing/lp_5.jpg" alt=""></li>   
+                          </ul>
+                      </div>
+                     
+                  <a href="#" class="next">&gt;</a>
+                  </div>
+                  
+                </div>
+                <div class="gift_right">
+                    <div class="gift_buy_top">
+                        <span class="gift_buy_right">礼品编号：20180910001</span>
+                      <h4>有温度的小熊</h4>
+                        
+                    </div>
+                    <div class="gift_buy_one">
+                        <span class="left_font"> 礼品内容</span>
+                        <span>有温度的小熊</span>
+                        <br>
+                        <span class="left_font">liYI99价格</span>
+                        <span>￥<span class="price"> 199</span> </span>
+                        <span class="left_font">
+                            (全国免费送货，新疆，西藏除外)
+                        </span>  
+                        
+                    </div>
+                    <div class="gift_buy_two">
+                        <span class="left_font">配送地址</span>
+                        <span class="left_font">送至</span>
+                        <input type="text"><input type="text">
+                        
+                    </div>
+                    <div class="gift_buy_three">
+                      <div>
+                        <span class="left_font color_three">水晶类型</span>
+                        <span class="inline_block">方形水晶</span>
+                        <span class="inline_block">心型水晶</span>
+                      </div>
+                      <div>
+                          <span class="left_font color_three">底座类型</span>
+                          <span class="inline_block">旋转发光底座</span>
+                          <span class="inline_block">发光底座</span>
+                      </div>
+                      <div>
+                          <img src="img/lw_lipinxiangqing/gift_goumai.jpg" class="shop">
+                          <img src="img/lw_lipinxiangqing/gift_cart.jpg" class="shop">
+                      </div> 
+                      
+                    </div>
+                   
+                    <div class="gift_buy_five">
+                            <img src="img/lw_lipinxiangqing/gift_tese.jpg" alt=""><br>
+                          <span>九年LiYi99千万用户见证98%准时到达率，好礼吉日送到家</span>
+                     </div>
+                </div>-->
+            </div>
+            <div class="gift_qing">
+              <h4>礼品情谊</h4>
+             <p>玫瑰不但只在五六月份盛开，如果有一款玫瑰能永久盛开而不凋谢你会送给她吗？纯洁的水晶，配上浪漫的玫瑰，祝福她永远幸福，爱情永远浪漫！
+                </p>
+                <p>温馨提示：此款礼品都为love款式，玫瑰图案为随机发送。</p>
+            </div>
+          <div class="gift_tabnav">
+              <ul class="gift_tabnav1">
+                  <li>
+                    <a href="#"> 礼物详情说明</a></li>
+                  <li><a href="#">支付说明</a></li>
+                  <li><a href="#">售后服务</a></li>
+                  <li><a href="#">客户评价</a></li>
+                  <li><a href="#">用户咨询</a></li>
+                  
+                   
+                </ul>
+                <img src="img/lw_lipinxiangqing/float_goumai.jpg" class="float_goumai">
+          </div>
+           
+          <div class="tupian_xiangqing">
+              <img src="img/lw_lipinxiangqing/lp_6.jpg" alt="">
+              <img src="img/lw_lipinxiangqing/lp_7.jpg" alt="">
+              <img src="img/lw_lipinxiangqing/lp_8.jpg" alt="">
+              <img src="img/lw_lipinxiangqing/lp_9.jpg" alt="">
+              <img src="img/lw_lipinxiangqing/lp_10.jpg" alt="">
+              <img src="img/lw_lipinxiangqing/lp_11.jpg" alt="">
+              <img src="img/lw_lipinxiangqing/lp_12.jpg" alt="">
+              <img src="img/lw_lipinxiangqing/lp_13.jpg" alt="">
+              <img src="img/lw_lipinxiangqing/lp_14.jpg" alt="">
+              <img src="img/lw_lipinxiangqing/lp_15.jpg" alt="">
+              <img src="img/lw_lipinxiangqing/lp_16.jpg" alt="">
+          
+          </div>
+        </div>
+          <!--侧边-->
+          <div class="gift_love_box">
+            <div class="gift_love_box1">
+              <div>猜你喜欢的</div>
+              <h5><img src="img/lw_lipinxiangqing/gift_love_top.jpg" alt=""></h5>
+              <ul>
+                <li><img src="img/lw_lipinxiangqing/c1.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                <li><img src="img/lw_lipinxiangqing/c2.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                <li><img src="img/lw_lipinxiangqing/c3.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                <li><img src="img/lw_lipinxiangqing/c4.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+              </ul>
+              <h5><img src="img/lw_lipinxiangqing/gift_love_foot.jpg" alt=""></h5>
+              <p><a href="#">更多创意礼品</a></p>
+              <p><a href="#">更多毛绒/娃娃玩具</a></p>
+            </div>
+            <div class="gift_love_box1">
+                <div>相同寓意礼品</div>
+                <h5><img src="img/lw_lipinxiangqing/gift_love_top.jpg" alt=""></h5>
+                <ul>
+                  <li><img src="img/lw_lipinxiangqing/c5.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                  <li><img src="img/lw_lipinxiangqing/c6.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                  <li><img src="img/lw_lipinxiangqing/c7.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                  <li><img src="img/lw_lipinxiangqing/c8.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                  <li><img src="img/lw_lipinxiangqing/c8.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                </ul>
+                <h5><img src="img/lw_lipinxiangqing/gift_love_foot.jpg" alt=""></h5>
+            </div>
+            <div class="gift_love_box1">
+                <div>相同寓意礼品</div>
+                <h5><img src="img/lw_lipinxiangqing/gift_love_top.jpg" alt=""></h5>
+                <ul>
+                  <li><img src="img/lw_lipinxiangqing/c10.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                  <li><img src="img/lw_lipinxiangqing/c11.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                  <li><img src="img/lw_lipinxiangqing/c12.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                  <li><img src="img/lw_lipinxiangqing/c13.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                  <li><img src="img/lw_lipinxiangqing/c14.jpg" alt=""><span>有温度的羊驼</span><h3>￥199</h3></li>
+                </ul>
+                <h5><img src="img/lw_lipinxiangqing/gift_love_foot.jpg" alt=""></h5>
+            </div>
+            <div class="gift_love_box1">
+                <li><img src="img/lw_lipinxiangqing/c15.jpg" alt=""><span>有温度的羊驼</span><span>￥199</span></li>
+                <li><img src="img/lw_lipinxiangqing/c16.jpg" alt=""><span>有温度的羊驼</span><span>￥199</span></li>
+                <li><img src="img/lw_lipinxiangqing/c17.jpg" alt=""><span>有温度的羊驼</span><span>￥199</span></li>
+                <li><img src="img/lw_lipinxiangqing/c18.jpg" alt=""><span>有温度的羊驼</span><span>￥199</span></li>
+                <li><img src="img/lw_lipinxiangqing/c15.jpg" alt=""><span>有温度的羊驼</span><span>￥199</span></li>
+            </div>
+          </div>
+         <div class="cb_right">
+          <a href="#">
+              <img src="img/lw_lipinxiangqing/float_right_qq.jpg" alt="">
+          </a>
+          <a href="#">
+              <img src="img/lw_lipinxiangqing/float_right_wx.jpg" alt="">
+           </a>
+           <a href="#">
+              <img src="img/lw_lipinxiangqing/float_right_cart.jpg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/lw_lipinxiangqing/float_foot.jpg" alt="">
+          </a>
+         
+         
+         </div>
+          
+     </div>
+    <footer class="container">
+    </footer>
+  
+    
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/details.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>lunbo</title>
+  <style>
+/*轮播代码*/
+*{margin:0;padding:0;}
+ul{
+	list-style:none;
+  }
+  .out{
+	width:1353px;
+	height:390px;
+	
+	position:relative;
+  }
+  .out .img li{
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+  }
+  .out .num{
+	position:absolute;
+	bottom:21px;
+	left:278px;
+	font-size:0px;
+	text-align:center;
+	width:100%;
+
+  }
+  .out .num li{
+	width:15px;
+	height:15px;
+	background:#B1B1B1;
+	color:#fff;
+	text-align:center;
+	line-height:20px;
+	display:inline-block;
+	border-radius:50%;
+	font-size:16px;
+	margin:0 3px;
+	cursor:pointer;
+  }
+  .out .num li.active{
+	background:#fff;
+  }
+  .out .btn{
+	position:absolute;
+	top:50%;
+	margin-top:-30px;
+	width:30px;
+	height:60px;
+	
+	color:#fff;
+	text-align:center;
+	
+	display:none;
+	cursor:pointer;
+  }
+  .out:hover .btn{
+	display:block;
+  }
+  .out .left{
+	left:0;
+	background:url(img/left.png) rgba(0,0,0,0.3) no-repeat 8px 20px;
+  }
+  .out .right{
+	right:0;
+	background:url(img/right.png) rgba(0,0,0,0.3) no-repeat 8px 20px;
+  }
+  </style>
+ </head>
+<body>
+ <div class="out">
+	<ul class="img">
+		<li > <a href="#"><img src="img/products/lb1.jpg" width="100%"></a></li>
+		<li><a href="#"><img src="img/products/lb2.jpg" width="100%"></a></li>
+		<li><a href="#"><img src="img/products/lb3.jpg" width="100%"></a></li>
+</ul>
+		<ul class="num">
+			
+		</ul>
+		<div class="left btn"></div>
+		<div class="right btn"></div> 
+	</div>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>	
+
+    <script src="js/jquery-1.11.3.js"></script>
+	<script>
+	$(function(){
+	//代码初始化
+	var size=$(".img li").size();
+	for(var i=1;i<=size;i++){
+		var li="<li></li>";
+		$(".num").append(li);
+	
+	}
+
+
+	//手动控制轮播
+	$(".img li").eq(0).show();
+	$(".num li").eq(0).addClass("active");
+	$(".num li").mouseover(function(){
+		$(this).addClass("active").siblings().removeClass("active")
+		var index=$(this).index();
+		i=index;
+		$(".img li").eq(index).stop().fadeIn().siblings().stop().fadeOut();
+	})
+
+	//自动轮播
+	var i=0;
+	var t=setInterval(move,1500)
+
+	//核心向左运动函数
+	function moveL(){
+		i--;
+		if(i==-1){
+			i=size-1;
+		}
+		$(".num li").eq(i).addClass("active").siblings().removeClass("active");
+		$(".img li").eq(i).fadeIn(300).siblings().fadeOut(500);
+	}
+	//核心向右运动函数
+	function move(){
+		i++;
+		if(i==size){
+			i=0;
+		}
+		$(".num li").eq(i).addClass("active").siblings().removeClass("active");
+		$(".img li").eq(i).fadeIn(300).siblings().fadeOut(500);
+	}
+	$(".out .left").click(function(){
+		moveL()
+	})
+	$(".out .right").click(function(){
+		move()
+	})
+
+
+
+	//定时器的开始于结束
+	$(".out").hover(function(){
+		clearInterval(t)
+	},function(){
+		t=setInterval(move,1500);
+	})
+})
+	</script>
+ </body>
+</html>

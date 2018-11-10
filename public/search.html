@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       *{margin:0;padding:0}
+            div.container{
+                width:1160px;
+               background:#fdfbf4;
+                margin:0 auto;display:flex;
+                justify-content:space-around;
+                flex-wrap: wrap;
+              }
+            li{float:left;margin-right:10px;list-style: none}
+            div.search_list,hr{width:100%;margin:5px 0;}
+              ul.search_right{float:right}
+              ul.search_right>li{border:1px solid gray;border-radius: 20%;padding:3px}
+            div.search_third{margin-bottom: 30px}
+            div.products_zhuti{
+                display:flex;
+                justify-content: space-between;
+                flex-wrap: wrap}
+            div.products_zhuti_detail{width:280px;height:374px;background:grar;border:1px solid gray;margin-bottom:10px}
+            div.products_zhuti_detail img{width:280px;height:280px}
+            .active{background:lightblue}
+    </style>
+</head>
+<body>
+        <header id="header" class="container"> </header>   
+    <div class="container">
+        <div class="first">您搜索的礼品内容是  <span>"保温杯"</span>，
+            礼意久久一共为您找到相关礼品<span>27</span>个;</div>
+    <hr>
+    <div class="search_list"> 
+        <ul>
+            <li>   <span>相关类别</span>  </li>
+            <li><a href="">全部类别</a></li>
+            <li><a href="">家居用品</a></li>
+            <li><a href="">饰品</a></li>
+            <li><a href="">创意礼品</a></li>
+            <li><a href="">服装服饰</a></li>
+            <li><a href="">玩具</a></li>
+            <li><a href="">保健礼品</a></li>
+            <li><a href="">工艺品</a></li>
+        </ul>
+    </div>
+    <div class="search_list">
+        <ul>
+            <li><span>商品价格</span></li>
+            <li><a href="">0~199</a></li>
+            <li><a href="">200~399</a></li>
+            <li><a href="">400~599</a></li>
+            <li><a href="">600~799</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="search_list search_third">
+        <ul>
+        <li><span>排列顺序</span></li>
+        <li><a href="">推荐</a></li>
+        <li><a href="">新品</a></li>
+        <li><a href="">价格</a></li>
+        </ul>
+        <ul class="search_right">
+            <li><a href="#">上一页</a></li>
+           
+               <!--<li >  <a href="#">1</a></li>-->
+                
+            <li><a href="#"> 下一页</a>  </li>
+        </ul>
+    </div >
+    
+            <div class="products_zhuti" id="search">
+                    <!--   <div class="products_zhuti_detail">
+                           <a href="#"><img src="img/index/part6/boyFriend1.jpg" class="girlfrendImg"></a>
+                           <span class="price_color"> ￥288</span>
+                           <h3> <a href="#"> Honey 熊</a></h3>  
+                           <a href="#">Honey 熊</a>
+                       </div>-->
+                      
+                </div>
+
+    </div>
+    
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>
